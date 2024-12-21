@@ -1,6 +1,7 @@
 # **Mind Map Application**
 
 ![image](https://github.com/user-attachments/assets/f030264d-cfa0-485d-a1bc-7d73c6f54457)
+[Check out the live demo on Netlify](https://musical-cucurucho-3cda21.netlify.app/)
 
 
 ---
