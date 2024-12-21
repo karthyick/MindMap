@@ -1,0 +1,69 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mind Map</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://cdn.jsdelivr.net/npm/marked@4.2.3/marked.min.js"></script>
+  <script src="https://d3js.org/d3.v7.min.js"></script>
+  <style>
+    .node circle {
+      fill: #69b3a2;
+      stroke: steelblue;
+      stroke-width: 2px;
+    }
+    .node text {
+      font-size: 12px;
+      font-family: Arial, sans-serif;
+    }
+    .link {
+      fill: none;
+      stroke: #ccc;
+      stroke-width: 1.5px;
+    }
+    .tooltip {
+      position: absolute;
+      background: #fff;
+      border: 1px solid #ccc;
+      padding: 4px 8px;
+      border-radius: 4px;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+      pointer-events: none;
+      font-size: 12px;
+    }
+    .export-btn {
+      background-color: #4f46e5;
+      color: white;
+      padding: 10px 20px;
+      border-radius: 5px;
+      cursor: pointer;
+      margin-top: 10px;
+    }
+    .export-btn:hover {
+      background-color: #4338ca;
+    }
+  </style>
+</head>
+<body class="bg-gray-100 text-gray-800">
+  <div class="flex h-screen">
+    <!-- Sidebar -->
+    <aside class="w-1/3 bg-white border-r overflow-y-auto">
+      <h2 class="text-lg font-bold p-4 bg-purple-600 text-white">Markdown Editor</h2>
+      <textarea id="markdown-input" class="w-full h-full p-4 resize-none" placeholder="Write your markdown here..."></textarea>
+    </aside>
+
+    <!-- Main Content -->
+    <main class="flex-1 flex flex-col">
+      <header class="p-4 bg-purple-600 text-white flex justify-between items-center">
+        <h1 class="text-xl font-bold">Mind Map</h1>
+        <button id="export-png" class="export-btn">Export as PNG</button>
+      </header>
+      <div id="mindmap" class="flex-1 bg-white relative"></div>
+    </main>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
