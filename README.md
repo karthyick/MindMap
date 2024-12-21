@@ -1,6 +1,7 @@
 # **Mind Map Application**
 
-![Mind Map App Screenshot](https://via.placeholder.com/800x400?text=Mind+Map+Application)
+![image](https://github.com/user-attachments/assets/f030264d-cfa0-485d-a1bc-7d73c6f54457)
+
 
 ---
 
